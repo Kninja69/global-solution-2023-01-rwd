@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" media="screen">
 </head>
 <body>
     <nav class="menu">
@@ -36,10 +36,10 @@
         <div>
             <h2>Cadastro Para Contato</h2>
 
-            <p>Preencha os campos abaixo com suas informações:</p><br>
+            <p>Preencha os campos abaixo com suas informações:</p>
         </div>
 
-        <form>
+        <form name="dados" action="index.html" method="get">
             <fieldset>
                 <div>
                     <label>Nome:</label>
@@ -50,15 +50,26 @@
                     <label>Sobrenome:</label>
                     <input type="text" nome="sobrenome" id="sobrenome">
                 </div>
-            </fieldset>
 
+                <div>
+                    <br><input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        <br>
+            <fieldset>
             <div>
                 <br><label>E-mail:</label>
                 <input type="email" nome="email" id="email">
             </div>
 
             <div>
-                <label>Com qual gênero você se identifica?</label>
+                <br><label>Telefone:</label>
+                <input type="tel" nome="tcomercial" id="idTComercial">
+            </div>
+            </fieldset>
+
+            <div>
+                <br><label>Com qual gênero você se identifica?</label>
                 <label>
                     <input type="radio" nome="genero" value="masculino">Masculino
                 </label>
