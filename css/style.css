@@ -1,15 +1,17 @@
 :root{
-    --color-interface-light: #fff;
+     --color-interface: #1f1f1f;
   
     --color-text-light: #c2c2c2;
     --color-text-medium-dark: #888;
     --color-text-dark: #333;
 }
   
-body {  
+body {
     margin: 0;
     padding: 0;
-    background-color: var(--color-interface-light);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar-title {
@@ -30,11 +32,36 @@ nav ul li a {
     text-decoration: none;
 } 
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+}
+
+/* .image-container {
+    position: fixed;
+    bottom: 11px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+} */
+
 footer {
-    position: absolute;
-    bottom: 0;
+    width: 100%;
+    font-size: 1vw;
+    padding-top: 7px;
     text-align: center;
     color: var(--color-text-medium-dark);
-    font-size: 1vw;
-    width: 100%;
+    background-color: var(--color-interface);
 }
