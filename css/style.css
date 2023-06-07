@@ -40,6 +40,15 @@ nav ul li a {
     height: 100vh;
 }
 
+.flex-container > div {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.flex-container > div > h3{
+    margin-top: 0; 
+}
+
 .title {
     text-align: center;
 }
