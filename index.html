@@ -3,56 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agricultura Sustentável</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/logo.ico" type="image/ico">
+    <!-- #region Frameworks -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+            rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- #endregion -->
+    <!-- #region Google Fonts/Icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <!-- #endregion -->                    
 </head>
 <body>
-    <nav class="menu">
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="sustentabilidade/sustentabilidade.html">Sustentabilidade</a>
-            </li>
-            <li>
-                <a href="agrointeligencia/agrointeligencia.html">Agrointeligência</a>
-            </li>
-            <li>
-                <a href="desafios/desafios.html">Desafios</a>
-            </li>
-            <li>
-                <a href="contato/contato.html">Contato</a>
-            </li>
-        </ul>
-    </nav>
-
-    <header>
-        <h1>FomeBusters</h1>
+    <header class="navbar-fixed">
+        <nav>
+            <div>
+                <h1 class="navbar-title">FomeBusters</h1>
+                <a href="#!" class="sidenav-trigger" data-target="mobile-demo">
+                    <i class="material-icons">menu</i>
+                 </a>               
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+                    <li><a href="agrointeligencia.html">Agrointeligência</a></li>
+                    <li><a href="cultivo.html">Cultivo Eficiente</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+                    <li><a href="agrointeligencia.html">Agrointeligência</a></li>
+                    <li><a href="cultivo.html">Cultivo Eficiente</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul> 
+            </div>           
+        </nav>
     </header>
     
-    <section>
-        <h2>Seja bem-vindo(a) à Página Inicial!</h2>
+    <main>
+        <section>
+            <div class="flex-container container-fluid">
+                <div>
+                    <!-- <div class="image-container">
+                        <img src="img/background_home1.png" class="img-fluid" alt="Imagem de fundo">
+                    </div>  -->
+                    <div class="d-inline-flex justify-content-center">
+                        <h2 class="title">Seja bem-vindo(a) ao FomeBusters!</h2>
+                    </div>
+                    <div>
+                        <p>Aqui você encontrará informações sobre a importância da agricultura sustentável e o uso de 
+                            Inteligências Artificiais generativas na produção e distribuição de alimentos.</p>
+                    </div>
+                </div>
 
-        <p>
-            Aqui você encontrará informações sobre a importância da agricultura sustentável e o uso de Inteligências Artificiais generativas na produção e distribuição de alimentos.
-        </p>
-        
-        <h3>Qual é o impacto que a Inteligência Artificial pode ter na agricultura?</h3>
-
-        <p>
-            A inteligência artificial na agricultura é uma forte aliada para uma produção sustentável, mais rápida e lucrativa. 
-            Tecnologias inovadoras conseguem entregar resultados mais expressivos de cultivo e colheita, utilizando a mesma quantidade de terra. 
-            Por meio de redes instaladas no campo, é possível monitorar, em tempo real, desde operações mecanizadas até a quantidade de chuva 
-            que atinge cada setor. A automação da agricultura pode reduzir o trabalho humano, melhorar a sustentabilidade ambiental e facilitar 
-            a adaptação e a mitigação das mudanças climáticas.
-        </p>
-    </section>
+                <div>
+                    <!-- <div class="image-container">
+                        <img src="img/" class="img-fluid" alt="Imagem de fundo">
+                    </div>  -->
+                    <div>
+                        <h3 class="subtitle">Qual é o impacto que a Inteligência Artificial pode ter na agricultura?</h3>
+                    </div>
+                    <div>
+                        <p>A inteligência artificial na agricultura é uma forte aliada para uma produção sustentável,mais rápida e lucrativa. 
+                            Tecnologias inovadoras conseguem entregar resultados mais expressivos de cultivo e colheita, utilizando a mesma quantidade de terra.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
     <footer>
         <p>&copy; 2023 FomeBusters. Todos os direitos reservados.</p>
-        <p>Matheus Paes Grando RM94446 | Édipo Borges de Carvalho RM550421 | Paolla Felix Alves de Oliveira RM98729 | Samara Zaluski RM99269 | Rafael Chaves da Silva RM99643</p>
+        <p>Édipo Borges de Carvalho - RM550421 | Matheus Paes Grando - RM94446 | Paolla Felix Alves de Oliveira - RM98729 
+            | Rafael Chaves - RM99643 | Samara Zaluski - RM99269 </p>
     </footer>
+
+
+    <!-- #region Scrips -->
+    <script src="JavaScript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- #endregion -->           
 </body>
 </html>
