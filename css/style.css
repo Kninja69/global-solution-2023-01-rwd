@@ -1,5 +1,6 @@
 :root{
-    --color-interface: #1f1f1f;
+    --color-interface-black: #1f1f1f;
+    --color-interface-primary: #319825;
 
     --color-text-light: #ffffff;
     --color-text-medium-dark: #888;
@@ -30,6 +31,10 @@ body {
     }
 }
 
+nav{
+    background-color: var(--color-interface-primary) !important;
+}
+
 .navbar-title {
     font-family: 'Sniglet', cursive;
     display: inline-block;
@@ -48,18 +53,22 @@ nav ul li a {
     text-decoration: none;
 } 
 
-main{
+.main-content {
     flex-grow: 1;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 .flex-container {
     padding-left:  0 !important;
     padding-right:  0 !important;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;
+    /* align-items: center; */
 }
 
 .flex-container > div {
@@ -70,6 +79,7 @@ main{
     position: relative;
     overflow: hidden;
     margin-top: 61px;
+    order: 1;
 }
 
 .div-title-style {
@@ -96,10 +106,8 @@ main{
 }
 
 .background-image > img {
-    transform: translate(3%, -14%);
+    transform: translate(3%, -11%);
 }
-
-
 
 .title{
     font-size: 3rem;
@@ -113,15 +121,48 @@ main{
     font-size: 1.3rem;
 }
 
-.flex-container > div > h3{
+.container-two {
+    order: 2;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.background-image2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px); 
+    z-index: -1;
+    transform: scale(1);
+}
+
+.background-image2 > img {
+    transform: translate(0%, 1%);
+}
+
+.div-title-style2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.subtitle{
     margin-top: 0; 
 }
 
 footer {
     width: 100%;
     font-size: 1vw;
-    padding-top: 7px;
+    flex-shrink: 0;
+    padding-top: 5px;
     text-align: center;
-    color: var(--color-text-medium-dark);
-    background-color: var(--color-interface);
+    color: var(--color-text-high-dark);
+    background-color: var(--color-interface-primary);
 }
