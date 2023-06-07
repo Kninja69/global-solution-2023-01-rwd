@@ -1,9 +1,10 @@
 :root{
-     --color-interface: #1f1f1f;
-  
-    --color-text-light: #c2c2c2;
+    --color-interface: #1f1f1f;
+
+    --color-text-light: #ffffff;
     --color-text-medium-dark: #888;
     --color-text-dark: #333;
+    --color-text-high-dark: #1d1d1d;
 }
   
 body {
@@ -11,6 +12,7 @@ body {
     padding: 0;
     height: 100vh;
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
 }
 
@@ -74,7 +76,13 @@ nav ul li a {
     text-decoration: none;
 } 
 
+main{
+    flex-grow: 1;
+}
+
 .flex-container {
+    padding-left:  0 !important;
+    padding-right:  0 !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,22 +90,60 @@ nav ul li a {
     height: 100vh;
 }
 
-.title {
+.flex-container > div {
     text-align: center;
 }
 
-/* .image-container {
-    position: fixed;
-    bottom: 11px;
-    left: 0;
-    width: 100%;
-    z-index: -1;
+.container-one {
+    position: relative;
+    overflow: hidden;
+    margin-top: 61px;
 }
 
-.image-container img {
+.div-title-style {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+
+.background-image {
+    position: relative;
     width: 100%;
-    height: auto;
-} */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px); 
+    z-index: -1;
+    transform: scale(1.1);
+}
+
+.background-image > img {
+    transform: translate(3%, -14%);
+}
+
+
+
+.title{
+    font-size: 3rem;
+    color: var(--color-text-light);
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.div-title-style p {
+    font-size: 1.3rem;
+}
+
+.flex-container > div > h3{
+    margin-top: 0; 
+}
 
 footer {
     width: 100%;
