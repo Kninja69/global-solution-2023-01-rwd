@@ -1,71 +1,40 @@
-/* style.css */
-body {
-    font-family: 'Montserrat', sans-serif;
+:root{
+    --color-interface-light: #fff;
+  
+    --color-text-light: #c2c2c2;
+    --color-text-medium-dark: #888;
+    --color-text-dark: #333;
+}
+  
+body {  
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: var(--color-interface-light);
 }
 
-h1 {
+.navbar-title {
+    font-family: 'Sniglet', cursive;
     display: inline-block;
+    margin-left: 12px;
+    margin-top: 14px;
+    font-size: 2rem;
 }  
 
-.menu ul{
-    background-color: #e3fbd9;
-    margin: 0;
-    padding: 2em;
-    display: flex;
-    flex-direction: row;
-}
-
-.menu li{
-    display: inline;
-    padding: 0 1em 0 0;
-}
-
-.menu li a{
+.sidenav-trigger{
     text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-nav {
-    margin: 0;
-}
-
-header, section, footer {
-    
-}
-
-header h1 {
-    color: #333;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
 }
 
 nav ul li a {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--color-text-dark);
     text-decoration: none;
-    color: #333;
-}
-
-nav ul li a:hover {
-    color: #555;
-}
+} 
 
 footer {
     position: absolute;
     bottom: 0;
     text-align: center;
-    color: #888;
-    font-size: 14px;
+    color: var(--color-text-medium-dark);
+    font-size: 1vw;
     width: 100%;
 }
