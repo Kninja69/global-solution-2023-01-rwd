@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafios</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
-    <nav class="menu">
-        <ul>
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="../sustentabilidade/sustentabilidade.html">Sustentabilidade</a>
-            </li>
-            <li>
-                <a href="../agrointeligencia/agrointeligencia.html">Agrointeligência</a>
-            </li>
-            <li>
-                <a href="desafios.html">Desafios</a>
-            </li>
-            <li>
-                <a href="../contato/contato.html">Contato</a>
-            </li>
-        </ul>
-    </nav>
-
     <header>
-        <h1>FomeBusters</h1>
+        <nav>
+            <div>
+                <h1>FomeBusters</h1>
+                <a href="#" class="sidenav-trigger" data-target="mobile-demo">
+                    <i class="material-icons">menu</i>
+                 </a>               
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./sustentabilidade/sustentabilidade.html">Sustentabilidade</a></li>
+                    <li><a href="./agrointeligencia/agrointeligencia.html">Agrointeligência</a></li>
+                    <li><a href="./desafios/desafios.html">Desafios</a></li>
+                    <li><a href="./contato/contato.html">Contato</a></li>
+                </ul>
+                <ul class="right sidenav" id="mobile-demo">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sustentabilidade/sustentabilidade.html">Sustentabilidade</a></li>
+                    <li><a href="agrointeligencia/agrointeligencia.html">Agrointeligência</a></li>
+                    <li><a href="desafios/desafios.html">Desafios</a></li>
+                    <li><a href="contato/contato.html">Contato</a></li>
+                </ul> 
+            </div>           
+        </nav>
     </header>
 
     <section>
@@ -67,5 +70,10 @@
         <p>&copy; 2023 FomeBusters. Todos os direitos reservados.</p>
         <p>Matheus Paes Grando RM94446 | Édipo Borges de Carvalho RM550421 | Paolla Felix Alves de Oliveira RM98729 | Samara Zaluski RM99269 | Rafael Chaves da Silva RM99643</p>
     </footer>
+
+
+    <script src="JavaScript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

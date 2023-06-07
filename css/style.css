@@ -6,7 +6,9 @@ body {
     background-color: #fff;
 }
 
-
+h1 {
+    display: inline-block;
+}  
 
 .menu ul{
     background-color: #e3fbd9;
