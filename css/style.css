@@ -1,5 +1,6 @@
 :root{
-    --color-interface: #1f1f1f;
+    --color-interface-black: #1f1f1f;
+    --color-interface-primary: #319825;
 
     --color-text-light: #ffffff;
     --color-text-medium-dark: #888;
@@ -14,6 +15,15 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+}
+
+p{
+    font-family: 'Jost', sans-serif;
+    font-weight: 400px; 
+}
+
+nav{
+    background-color: var(--color-interface-primary) !important;
 }
 
 .main-sustentabilidade, .main-agrointeligencia, .main-cultivos, .main-contato {
@@ -52,18 +62,20 @@ nav ul li a {
     text-decoration: none;
 } 
 
-main{
+.main-content {
     flex-grow: 1;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 .flex-container {
     padding-left:  0 !important;
     padding-right:  0 !important;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;
 }
 
 .flex-container > div {
@@ -71,22 +83,23 @@ main{
 }
 
 .container-one {
+    order: 1;
     position: relative;
     overflow: hidden;
     margin-top: 61px;
+    height: 737px;
 }
 
 .div-title-style {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -65%);
     text-align: center;
     width: 80%;
     max-width: 600px;
     padding: 20px;
 }
-
 
 .background-image {
     position: relative;
@@ -100,10 +113,8 @@ main{
 }
 
 .background-image > img {
-    transform: translate(3%, -14%);
+    transform: translate(3%, -11%);
 }
-
-
 
 .title{
     font-size: 3rem;
@@ -117,15 +128,108 @@ main{
     font-size: 1.3rem;
 }
 
-.flex-container > div > h3{
-    margin-top: 0; 
+.container-two {
+    order: 3;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.background-image2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px); 
+    z-index: -1;
+    transform: scale(1);
+}
+
+.background-image2 > img {
+    transform: translate(0%, 1%);
+}
+
+.div-title-style2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 182%);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.subtitle{
+    font-size: 3rem;
+    color: var(--color-text-light);
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.div-title-style2 p {
+    font-size: 1.3rem;
 }
 
 footer {
     width: 100%;
     font-size: 1vw;
-    padding-top: 7px;
+    flex-shrink: 0;
+    padding-top: 5px;
     text-align: center;
-    color: var(--color-text-medium-dark);
-    background-color: var(--color-interface);
+    color: var(--color-text-high-dark);
+    background-color: var(--color-interface-primary);
+}
+
+@media only screen and (min-width: 280px) and (max-width: 600px) {
+    .title {
+      font-size: 2rem;
+    }
+    .subtitle {
+      font-size: 2rem;
+    }
+    .background-image{
+        transform: translate(3%, 115%);
+    }
+    .background-image,
+    .background-image2 {
+      background-size: contain;
+    }
+    .background-image > img {
+        transform: translate(3%, 48%);
+    }    
+    .background-image2 > img {
+      transform: none;
+    }    
+    footer {
+      padding-top: 10px;
+      font-size: 12px;
+    }
+}
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .title {
+      font-size: 2.5rem;
+    }
+    .subtitle {
+      font-size: 2.5rem;
+    }
+    footer {
+      padding-top: 15px;
+      font-size: 14px;
+    }
+}
+  
+  @media only screen and (min-width: 1025px) and (max-width: 3840px) {
+    .title {
+      font-size: 3rem;
+    }
+    .subtitle {
+      font-size: 3rem;
+    }
+    footer {
+      padding-top: 20px;
+      font-size: 16px;
+    }
 }
