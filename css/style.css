@@ -17,51 +17,15 @@ body {
     flex-direction: column;
 }
 
-.sustentabilidade .container {
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 900px) {
-    .sustentabilidade .container {
-        flex-direction: row;
-    }
-    .sustentabilidade .container div {
-        margin: 1em;
-    }
+p{
+    font-family: 'Jost', sans-serif;
+    font-weight: 400px; 
 }
 
 nav{
     background-color: var(--color-interface-primary) !important;
 }
 
-.agrointeligencia .container {
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 900px) {
-    .agrointeligencia .container {
-        flex-direction: row;
-    }
-    .agrointeligencia .container div {
-        margin: 1em;
-    }
-}
-
-.desafios .container {
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 900px) {
-    .desafios .container {
-        flex-direction: row;
-    }
-    .desafios .container div {
-        margin: 1em;
-    }
-}
 
 .navbar-title {
     font-family: 'Sniglet', cursive;
@@ -93,10 +57,8 @@ nav ul li a {
     padding-right:  0 !important;
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: flex-start;
-    /* align-items: center; */
 }
 
 .flex-container > div {
@@ -104,23 +66,23 @@ nav ul li a {
 }
 
 .container-one {
+    order: 1;
     position: relative;
     overflow: hidden;
     margin-top: 61px;
-    order: 1;
+    height: 737px;
 }
 
 .div-title-style {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -65%);
     text-align: center;
     width: 80%;
     max-width: 600px;
     padding: 20px;
 }
-
 
 .background-image {
     position: relative;
@@ -150,7 +112,7 @@ nav ul li a {
 }
 
 .container-two {
-    order: 2;
+    order: 3;
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
@@ -174,7 +136,7 @@ nav ul li a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 182%);
     text-align: center;
     width: 80%;
     max-width: 600px;
@@ -182,7 +144,15 @@ nav ul li a {
 }
 
 .subtitle{
-    margin-top: 0; 
+    font-size: 3rem;
+    color: var(--color-text-light);
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.div-title-style2 p {
+    font-size: 1.3rem;
 }
 
 footer {
@@ -193,4 +163,56 @@ footer {
     text-align: center;
     color: var(--color-text-high-dark);
     background-color: var(--color-interface-primary);
+}
+
+@media only screen and (min-width: 280px) and (max-width: 600px) {
+    .title {
+      font-size: 2rem;
+    }
+    .subtitle {
+      font-size: 2rem;
+    }
+    .background-image{
+        transform: translate(3%, 115%);
+    }
+    .background-image,
+    .background-image2 {
+      background-size: contain;
+    }
+    .background-image > img {
+        transform: translate(3%, 48%);
+    }    
+    .background-image2 > img {
+      transform: none;
+    }    
+    footer {
+      padding-top: 10px;
+      font-size: 12px;
+    }
+}
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .title {
+      font-size: 2.5rem;
+    }
+    .subtitle {
+      font-size: 2.5rem;
+    }
+    footer {
+      padding-top: 15px;
+      font-size: 14px;
+    }
+}
+  
+  @media only screen and (min-width: 1025px) and (max-width: 3840px) {
+    .title {
+      font-size: 3rem;
+    }
+    .subtitle {
+      font-size: 3rem;
+    }
+    footer {
+      padding-top: 20px;
+      font-size: 16px;
+    }
 }
