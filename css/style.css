@@ -16,6 +16,10 @@ body {
     flex-direction: column;
 }
 
+.main-sustentabilidade, .main-agrointeligencia, .main-cultivos, .main-contato {
+    padding: 0 2em;
+}
+
 .sustentabilidade .container {
     display: flex;
     flex-direction: column;
