@@ -26,6 +26,23 @@ nav{
     background-color: var(--color-interface-primary) !important;
 }
 
+.main-sustentabilidade, .main-agrointeligencia, .main-cultivos, .main-contato {
+    padding: 0 2em;
+}
+
+.sustentabilidade .container, .agrointeligencia .container, .cultivos .container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 900px) {
+    .sustentabilidade .container, .agrointeligencia .container, .cultivos .container {
+        flex-direction: row;
+    }
+    .sustentabilidade .container div, .agrointeligencia .container div, .cultivos .container div {
+        margin: 1em;
+    }
+}
 
 .navbar-title {
     font-family: 'Sniglet', cursive;
