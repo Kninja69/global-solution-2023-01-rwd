@@ -31,10 +31,10 @@ body {
     }
 }
 
-<<<<<<< HEAD
 nav{
     background-color: var(--color-interface-primary) !important;
-=======
+}
+
 .agrointeligencia .container {
     display: flex;
     flex-direction: column;
@@ -61,7 +61,6 @@ nav{
     .desafios .container div {
         margin: 1em;
     }
->>>>>>> 4801f3e59e3bed5e28b345bdc3d6d7dbd19159a3
 }
 
 .navbar-title {
